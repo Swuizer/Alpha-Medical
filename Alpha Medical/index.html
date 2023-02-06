@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Alpha Medical</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        #wrapper{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .stethoscope{
+           transition: all 3s;
+           animation: stethoscope 7s linear infinite;
+        }
+        @keyframes stethoscope {
+            0%{
+                opacity: 0.02; 
+            }
+            50%{
+                opacity: 0.2;
+                transform: scale(1.05);
+            }
+            100%{
+                opacity: 0.02;
+            }
+        }
+    </style>
+  <link rel="stylesheet" href="/assets/index-2cb6adef.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Navbar -->
+        <nav class="w-11/12 max-w-[1200px] relative mx-auto flex bg-blue-100 rounded-md 
+        py-1 -top-0 md:-top-2 leading-[1.2] justify-between items-center">
+            <h1 class="flex items-baseline ml-4">
+                <span class="font-mullish font-bold md:font-extrabold text-blue-900 text-2xl pt-6 md:text-[3.40rem]">A</span>
+                <p class="font-mullish font-bold text-[12px] md:text-3xl text-blue-900 ">lpha <span>Medical</span></p>
+            </h1>
+            <ul class="flex gap-x-6 md:gap-x-24 cursor-pointers">
+                <li class="text-blue-900 text-[12px] md:text-xl pt-6 font-bold">Services</li>
+                <li class="text-blue-900 text-[12px] md:text-xl pt-6 font-bold">About Us</li>
+            </ul>
+            <div class="pt-6 mr-4 hidden xl:block">
+                <img src="/assets/logo-0b602448.png" width="50px" height="50px" loading="lazy">
+            </div>
+            <div class="pt-6 mr-4 hidden md:block xl:hidden">
+                <img src="/assets/logo-0b602448.png" width="35px" height="35px" loading="lazy">
+            </div>
+            <div class="pt-6 mr-4 block md:hidden">
+                <img src="/assets/logo-0b602448.png" width="20px" height="20px" loading="lazy">
+            </div>
+        </nav>
+
+        <!-- Feature Section -->
+        <section class="font-mullish relative">
+            <div class="w-11/12 max-w-[1200px] mx-auto">
+                <!-- Heading -->
+                <h1 class="text-blue-900  text-xl md:text-4xl font-bold text-center leading-[1.2] mt-8">Services</h1>
+                <div class="w-6 h-1 bg-green-500 mx-auto text-center mt-3 mb-5 md:mt-4 md:mb-6"></div>
+                <!-- Container -->
+                <div class="w-full min-h-[420px] flex flex-col md:flex-row border border-gray-300 bg-blue-100 
+                rounded-md relative justify-center p-10 py-12">
+                    <!-- Left Part -->
+                    <div class="flex flex-col items-center justify-evenly w-full z-20"> <!-- justify-between -->
+                        <h1 class="max-w-[500px] text-2xl mb-4 md:mb-0 md:text-[28px] font-bold flex items-center text-blue-900 leading-10">Alpha Medical</h1>
+                        <ul class="space-y-2">
+                        <li class="font-mullish flex text-[15px] md:text-[16px] items-center text-slate-700 font-bold space-x-2 md:space-x-4">
+                            <img src="/assets/check (1)-65234fde.svg">
+                            <span>Book Appointment</span>
+                        </li>
+                        <li class="font-mullish flex text-[15px] md:text-[16px] items-center text-slate-700 font-bold space-x-2 md:space-x-4">
+                            <img src="/assets/check (1)-65234fde.svg">
+                            <span>Book Health Check</span>
+                        </li>
+                        <li class="font-mullish flex text-[15px] md:text-[16px] items-center text-slate-700 font-bold space-x-2 md:space-x-4">
+                            <img src="/assets/check (1)-65234fde.svg">
+                            <span>Consult Online</span>
+                        </li>
+                        <li class="font-mullish flex text-[15px] md:text-[16px] items-center text-slate-700 font-bold space-x-2 md:space-x-4">
+                            <img src="/assets/check (1)-65234fde.svg">
+                            <span>Buy Medicine</span>
+                        </li>
+                        <li class="font-mullish flex text-[15px] md:text-[16px] items-center text-slate-700 font-bold space-x-2 md:space-x-4">
+                            <img src="/assets/check (1)-65234fde.svg">
+                            <span>Book Lab Test</span>
+                        </li>
+                        </ul>
+                        <!-- Button -->
+                        <button class="flex items-center cursor-pointer bg-blue-500 text-white md:w-fit  py-[14px] px-[18px] mt-4 md:mt-0 rounded-md font-mullish font-bold
+                        hover:bg-blue-600 transition-all duration-200 w-full justify-center">
+                            Book Now
+                            <img src="/assets/arrow-right-0aaeda1b.svg"
+                           class="w-4 ml-2">
+                        </button>
+                    </div>
+                    <!-- Middle Part -->
+                    <div class="flex justify-center items-center">
+                        <img src="/assets/stethoscope-gb505cb95a_1280 (1)-58f32899.svg"
+                        width="250" height="200" loading="lazy"
+                        class="z-1 items-center opacity-10 stethoscope block md:hidden">
+
+                        <img src="/assets/stethoscope-gb505cb95a_1280 (1)-58f32899.svg"
+                        width="200" height="200" loading="lazy"
+                        class="z-1 items-center opacity-10 stethoscope hidden md:block lg:hidden">
+
+                        <img src="/assets/stethoscope-gb505cb95a_1280 (1)-58f32899.svg" loading="lazy"
+                        class="z-1 items-center opacity-10 stethoscope hidden lg:block">
+                    </div>
+                    <!-- Right Part -->
+                    <img src="/assets/istockphoto-1217755212-612x612-c968a16e.jpg" width="400" height="300" loading="lazy" class=" mx-auto block xl:hidden">
+                    <img src="/assets/istockphoto-1217755212-612x612-c968a16e.jpg" loading="lazy" class="mx-auto hidden xl:block">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
